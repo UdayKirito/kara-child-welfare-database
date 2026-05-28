@@ -1,0 +1,2396 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0611.0337                               -->
+<workbook original-version='18.1' source-build='2025.1.3 (20251.25.0611.0337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Alleged victims determined+ (Final_cleaned_dashboard_ready)' inline='true' name='federated.0xs94vc17hcpld1axbhcn1mkkbtr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Final_cleaned_dashboard_ready' name='excel-direct.17uq8ng110hng211zgdpr0oui90j'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/HP/OneDrive/Desktop/Final_cleaned_dashboard_ready.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims determined' table='[&apos;Alleged victims determined$&apos;]' type='table'>
+            <columns gridOrigin='A1:H241:no:A1:H241:0' header='yes' outcome='6'>
+              <column datatype='string' name='County' ordinal='0' />
+              <column datatype='integer' name='Alleged victims' ordinal='1' />
+              <column datatype='integer' name='Determined victims' ordinal='2' />
+              <column datatype='integer' name='Child pop. est. (2016)' ordinal='3' />
+              <column datatype='integer' name='Child pop. est. (2018)' ordinal='4' />
+              <column datatype='integer' name='Child pop. est. (2019)' ordinal='5' />
+              <column datatype='real' name='Determined victims per 1,000' ordinal='6' />
+              <column datatype='integer' name='Year' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Victims determined' table='[&apos;Victims determined$&apos;]' type='table'>
+            <columns gridOrigin='A1:H161:no:A1:H161:0' header='yes' outcome='6'>
+              <column datatype='string' name='County' ordinal='0' />
+              <column datatype='integer' name='Total FI alleged victims' ordinal='1' />
+              <column datatype='integer' name='FI determined victims (N)' ordinal='2' />
+              <column datatype='real' name='FI determined victims (%)' ordinal='3' />
+              <column datatype='integer' name='Total Fac Inv. alleged victims' ordinal='4' />
+              <column datatype='integer' name='Fac. Inv. determined victims (N)' ordinal='5' />
+              <column datatype='real' name='Fac. Inv. determined victims (%)' ordinal='6' />
+              <column datatype='integer' name='Year' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims by gender' table='[&apos;Alleged victims by gender$&apos;]' type='table'>
+            <columns gridOrigin='A1:I161:no:A1:I161:0' header='yes' outcome='6'>
+              <column datatype='string' name='County' ordinal='0' />
+              <column datatype='integer' name='Female (N)' ordinal='1' />
+              <column datatype='real' name='Female (%)' ordinal='2' />
+              <column datatype='integer' name='Male (N)' ordinal='3' />
+              <column datatype='real' name='Male (%)' ordinal='4' />
+              <column datatype='integer' name='Alleged victims' ordinal='5' />
+              <column datatype='integer' name='Child population' ordinal='6' />
+              <column datatype='real' name='Rate per 1,000' ordinal='7' />
+              <column datatype='integer' name='Year' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims by disability' table='[&apos;Alleged victims by disability$&apos;]' type='table'>
+            <columns gridOrigin='A1:D29:no:A1:D29:0' header='yes' outcome='6'>
+              <column datatype='string' name='Disability' ordinal='0' />
+              <column datatype='integer' name='Alleged victims' ordinal='1' />
+              <column datatype='real' name='Percent of alleged victims' ordinal='2' />
+              <column datatype='integer' name='Year' ordinal='3' />
+            </columns>
+          </relation>
+          <relation name='Pivot' type='pivot'>
+            <columns>
+              <column datatype='string' name='Pivot Field Names' />
+              <column datatype='integer' name='Pivot Field Values' />
+            </columns>
+            <tag name='Pivot Field Names'>
+              <value name='[12 to 14 years (N)]' />
+              <value name='[15 to 17 years (N)]' />
+              <value name='[3 to 5 years (N)]' />
+              <value name='[6 to 8 years (N)]' />
+              <value name='[9 to 11 years (N)]' />
+              <value name='[Under 3 years (N)]' />
+            </tag>
+            <groups>
+              <group name='Pivot Field Values'>
+                <field name='[Alleged victims by age].[12 to 14 years (N)]' />
+                <field name='[Alleged victims by age].[15 to 17 years (N)]' />
+                <field name='[Alleged victims by age].[3 to 5 years (N)]' />
+                <field name='[Alleged victims by age].[6 to 8 years (N)]' />
+                <field name='[Alleged victims by age].[9 to 11 years (N)]' />
+                <field name='[Alleged victims by age].[Under 3 years (N)]' />
+              </group>
+            </groups>
+            <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims by age' table='[&apos;Alleged victims by age$&apos;]' type='table'>
+              <columns gridOrigin='A1:H399:no:A1:H399:0' header='yes' outcome='6'>
+                <column datatype='string' name='County' ordinal='0' />
+                <column datatype='integer' name='Under 3 years (N)' ordinal='1' />
+                <column datatype='integer' name='3 to 5 years (N)' ordinal='2' />
+                <column datatype='integer' name='6 to 8 years (N)' ordinal='3' />
+                <column datatype='integer' name='9 to 11 years (N)' ordinal='4' />
+                <column datatype='integer' name='12 to 14 years (N)' ordinal='5' />
+                <column datatype='integer' name='15 to 17 years (N)' ordinal='6' />
+                <column datatype='integer' name='Year' ordinal='7' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Victims by type of Maltreatment' table='[&apos;Victims by type of Maltreatment$&apos;]' type='table'>
+            <columns gridOrigin='A1:K407:no:A1:K407:0' header='yes' outcome='6'>
+              <column datatype='string' name='County' ordinal='0' />
+              <column datatype='integer' name='Medical neglect' ordinal='1' />
+              <column datatype='integer' name='Threatened injury' ordinal='2' />
+              <column datatype='integer' name='Neglect' ordinal='3' />
+              <column datatype='integer' name='Sexual abuse' ordinal='4' />
+              <column datatype='integer' name='Mental injury' ordinal='5' />
+              <column datatype='integer' name='Physical abuse' ordinal='6' />
+              <column datatype='integer' name='Total alleged victims*' ordinal='7' />
+              <column datatype='integer' name='Child pop. Estimated' ordinal='8' />
+              <column datatype='real' name='Rate per 1,000' ordinal='9' />
+              <column datatype='integer' name='Year' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims by race' table='[&apos;Alleged victims by race$&apos;]' type='table'>
+            <columns gridOrigin='A1:J405:no:A1:J405:0' header='yes' outcome='6'>
+              <column datatype='string' name='County' ordinal='0' />
+              <column datatype='integer' name='African American/ Black' ordinal='1' />
+              <column datatype='integer' name='American Indian' ordinal='2' />
+              <column datatype='integer' name='Asian/ Pacific Islander' ordinal='3' />
+              <column datatype='integer' name='Two or more races' ordinal='4' />
+              <column datatype='integer' name='Unknown/ declined' ordinal='5' />
+              <column datatype='integer' name='White' ordinal='6' />
+              <column datatype='integer' name='Total alleged victims' ordinal='7' />
+              <column datatype='integer' name='Hispanic (any race)' ordinal='8' />
+              <column datatype='integer' name='Year' ordinal='9' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[African American/ Black]' value='[Alleged victims by race].[African American/ Black]' />
+          <map key='[Alleged victims (Alleged victims by disability)]' value='[Alleged victims by disability].[Alleged victims]' />
+          <map key='[Alleged victims (Alleged victims by gender)]' value='[Alleged victims by gender].[Alleged victims]' />
+          <map key='[Alleged victims]' value='[Alleged victims determined].[Alleged victims]' />
+          <map key='[American Indian]' value='[Alleged victims by race].[American Indian]' />
+          <map key='[Asian/ Pacific Islander]' value='[Alleged victims by race].[Asian/ Pacific Islander]' />
+          <map key='[Child pop. Estimated]' value='[Victims by type of Maltreatment].[Child pop. Estimated]' />
+          <map key='[Child pop. est. (2016)]' value='[Alleged victims determined].[Child pop. est. (2016)]' />
+          <map key='[Child pop. est. (2018)]' value='[Alleged victims determined].[Child pop. est. (2018)]' />
+          <map key='[Child pop. est. (2019)]' value='[Alleged victims determined].[Child pop. est. (2019)]' />
+          <map key='[Child population]' value='[Alleged victims by gender].[Child population]' />
+          <map key='[County (Alleged victims by age)]' value='[Alleged victims by age].[County]' />
+          <map key='[County (Alleged victims by gender)]' value='[Alleged victims by gender].[County]' />
+          <map key='[County (Alleged victims by race)]' value='[Alleged victims by race].[County]' />
+          <map key='[County (Victims by type of Maltreatment)]' value='[Victims by type of Maltreatment].[County]' />
+          <map key='[County (Victims determined)]' value='[Victims determined].[County]' />
+          <map key='[County]' value='[Alleged victims determined].[County]' />
+          <map key='[Determined victims per 1,000]' value='[Alleged victims determined].[Determined victims per 1,000]' />
+          <map key='[Determined victims]' value='[Alleged victims determined].[Determined victims]' />
+          <map key='[Disability]' value='[Alleged victims by disability].[Disability]' />
+          <map key='[FI determined victims (%)]' value='[Victims determined].[FI determined victims (%)]' />
+          <map key='[FI determined victims (N)]' value='[Victims determined].[FI determined victims (N)]' />
+          <map key='[Fac. Inv. determined victims (%)]' value='[Victims determined].[Fac. Inv. determined victims (%)]' />
+          <map key='[Fac. Inv. determined victims (N)]' value='[Victims determined].[Fac. Inv. determined victims (N)]' />
+          <map key='[Female (%)]' value='[Alleged victims by gender].[Female (%)]' />
+          <map key='[Female (N)]' value='[Alleged victims by gender].[Female (N)]' />
+          <map key='[Hispanic (any race)]' value='[Alleged victims by race].[Hispanic (any race)]' />
+          <map key='[Male (%)]' value='[Alleged victims by gender].[Male (%)]' />
+          <map key='[Male (N)]' value='[Alleged victims by gender].[Male (N)]' />
+          <map key='[Medical neglect]' value='[Victims by type of Maltreatment].[Medical neglect]' />
+          <map key='[Mental injury]' value='[Victims by type of Maltreatment].[Mental injury]' />
+          <map key='[Neglect]' value='[Victims by type of Maltreatment].[Neglect]' />
+          <map key='[Percent of alleged victims]' value='[Alleged victims by disability].[Percent of alleged victims]' />
+          <map key='[Physical abuse]' value='[Victims by type of Maltreatment].[Physical abuse]' />
+          <map key='[Pivot Field Names]' value='[Pivot].[Pivot Field Names]' />
+          <map key='[Pivot Field Values]' value='[Pivot].[Pivot Field Values]' />
+          <map key='[Rate per 1,000 (Victims by type of Maltreatment)]' value='[Victims by type of Maltreatment].[Rate per 1,000]' />
+          <map key='[Rate per 1,000]' value='[Alleged victims by gender].[Rate per 1,000]' />
+          <map key='[Sexual abuse]' value='[Victims by type of Maltreatment].[Sexual abuse]' />
+          <map key='[Threatened injury]' value='[Victims by type of Maltreatment].[Threatened injury]' />
+          <map key='[Total FI alleged victims]' value='[Victims determined].[Total FI alleged victims]' />
+          <map key='[Total Fac Inv. alleged victims]' value='[Victims determined].[Total Fac Inv. alleged victims]' />
+          <map key='[Total alleged victims*]' value='[Victims by type of Maltreatment].[Total alleged victims*]' />
+          <map key='[Total alleged victims]' value='[Alleged victims by race].[Total alleged victims]' />
+          <map key='[Two or more races]' value='[Alleged victims by race].[Two or more races]' />
+          <map key='[Unknown/ declined]' value='[Alleged victims by race].[Unknown/ declined]' />
+          <map key='[White]' value='[Alleged victims by race].[White]' />
+          <map key='[Year (Alleged victims by age)]' value='[Alleged victims by age].[Year]' />
+          <map key='[Year (Alleged victims by disability)]' value='[Alleged victims by disability].[Year]' />
+          <map key='[Year (Alleged victims by gender)]' value='[Alleged victims by gender].[Year]' />
+          <map key='[Year (Alleged victims by race)]' value='[Alleged victims by race].[Year]' />
+          <map key='[Year (Victims by type of Maltreatment)]' value='[Victims by type of Maltreatment].[Year]' />
+          <map key='[Year (Victims determined)]' value='[Victims determined].[Year]' />
+          <map key='[Year]' value='[Alleged victims determined].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Alleged victims determined]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H241:no:A1:H241:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Victims determined]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H161:no:A1:H161:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I161:no:A1:I161:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Alleged victims by disability]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D29:no:A1:D29:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Alleged victims by age]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H399:no:A1:H399:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K407:no:A1:K407:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J405:no:A1:J405:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Alleged victims determined]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims determined_13CD4208498C42E78C3D750B573C4537]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alleged victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Alleged victims]</local-name>
+            <parent-name>[Alleged victims determined]</parent-name>
+            <remote-alias>Alleged victims</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims determined_13CD4208498C42E78C3D750B573C4537]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Determined victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Determined victims]</local-name>
+            <parent-name>[Alleged victims determined]</parent-name>
+            <remote-alias>Determined victims</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims determined_13CD4208498C42E78C3D750B573C4537]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Child pop. est. (2016)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Child pop. est. (2016)]</local-name>
+            <parent-name>[Alleged victims determined]</parent-name>
+            <remote-alias>Child pop. est. (2016)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims determined_13CD4208498C42E78C3D750B573C4537]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Child pop. est. (2018)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Child pop. est. (2018)]</local-name>
+            <parent-name>[Alleged victims determined]</parent-name>
+            <remote-alias>Child pop. est. (2018)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims determined_13CD4208498C42E78C3D750B573C4537]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Child pop. est. (2019)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Child pop. est. (2019)]</local-name>
+            <parent-name>[Alleged victims determined]</parent-name>
+            <remote-alias>Child pop. est. (2019)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims determined_13CD4208498C42E78C3D750B573C4537]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Determined victims per 1,000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Determined victims per 1,000]</local-name>
+            <parent-name>[Alleged victims determined]</parent-name>
+            <remote-alias>Determined victims per 1,000</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims determined_13CD4208498C42E78C3D750B573C4537]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Alleged victims determined]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims determined_13CD4208498C42E78C3D750B573C4537]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County (Victims determined)]</local-name>
+            <parent-name>[Victims determined]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Victims determined_950C827EC14448A9B69DE55E81264CD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total FI alleged victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total FI alleged victims]</local-name>
+            <parent-name>[Victims determined]</parent-name>
+            <remote-alias>Total FI alleged victims</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims determined_950C827EC14448A9B69DE55E81264CD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FI determined victims (N)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FI determined victims (N)]</local-name>
+            <parent-name>[Victims determined]</parent-name>
+            <remote-alias>FI determined victims (N)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims determined_950C827EC14448A9B69DE55E81264CD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FI determined victims (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FI determined victims (%)]</local-name>
+            <parent-name>[Victims determined]</parent-name>
+            <remote-alias>FI determined victims (%)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims determined_950C827EC14448A9B69DE55E81264CD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Fac Inv. alleged victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Fac Inv. alleged victims]</local-name>
+            <parent-name>[Victims determined]</parent-name>
+            <remote-alias>Total Fac Inv. alleged victims</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims determined_950C827EC14448A9B69DE55E81264CD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fac. Inv. determined victims (N)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fac. Inv. determined victims (N)]</local-name>
+            <parent-name>[Victims determined]</parent-name>
+            <remote-alias>Fac. Inv. determined victims (N)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims determined_950C827EC14448A9B69DE55E81264CD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fac. Inv. determined victims (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fac. Inv. determined victims (%)]</local-name>
+            <parent-name>[Victims determined]</parent-name>
+            <remote-alias>Fac. Inv. determined victims (%)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims determined_950C827EC14448A9B69DE55E81264CD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (Victims determined)]</local-name>
+            <parent-name>[Victims determined]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims determined_950C827EC14448A9B69DE55E81264CD3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County (Alleged victims by gender)]</local-name>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female (N)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female (N)]</local-name>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias>Female (N)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Female (%)]</local-name>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias>Female (%)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male (N)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Male (N)]</local-name>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias>Male (N)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Male (%)]</local-name>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias>Male (%)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alleged victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Alleged victims (Alleged victims by gender)]</local-name>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias>Alleged victims</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Child population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Child population]</local-name>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias>Child population</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rate per 1,000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rate per 1,000]</local-name>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias>Rate per 1,000</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (Alleged victims by gender)]</local-name>
+            <parent-name>[Alleged victims by gender]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Disability</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Disability]</local-name>
+            <parent-name>[Alleged victims by disability]</parent-name>
+            <remote-alias>Disability</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by disability_5FAE3DEE31A247A4B56D8942F3E359A0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alleged victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Alleged victims (Alleged victims by disability)]</local-name>
+            <parent-name>[Alleged victims by disability]</parent-name>
+            <remote-alias>Alleged victims</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by disability_5FAE3DEE31A247A4B56D8942F3E359A0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percent of alleged victims</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percent of alleged victims]</local-name>
+            <parent-name>[Alleged victims by disability]</parent-name>
+            <remote-alias>Percent of alleged victims</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by disability_5FAE3DEE31A247A4B56D8942F3E359A0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (Alleged victims by disability)]</local-name>
+            <parent-name>[Alleged victims by disability]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by disability_5FAE3DEE31A247A4B56D8942F3E359A0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County (Alleged victims by age)]</local-name>
+            <parent-name>[Alleged victims by age]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by age_33C7562E20D74162A2811B3494780D80]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (Alleged victims by age)]</local-name>
+            <parent-name>[Alleged victims by age]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by age_33C7562E20D74162A2811B3494780D80]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Alleged victims by age_33C7562E20D74162A2811B3494780D80]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Alleged victims by age_33C7562E20D74162A2811B3494780D80]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County (Victims by type of Maltreatment)]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medical neglect</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Medical neglect]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Medical neglect</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Threatened injury</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Threatened injury]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Threatened injury</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neglect</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Neglect]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Neglect</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sexual abuse</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sexual abuse]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Sexual abuse</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mental injury</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mental injury]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Mental injury</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Physical abuse</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Physical abuse]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Physical abuse</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total alleged victims*</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total alleged victims*]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Total alleged victims*</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Child pop. Estimated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Child pop. Estimated]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Child pop. Estimated</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rate per 1,000</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rate per 1,000 (Victims by type of Maltreatment)]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Rate per 1,000</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (Victims by type of Maltreatment)]</local-name>
+            <parent-name>[Victims by type of Maltreatment]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County (Alleged victims by race)]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>African American/ Black</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[African American/ Black]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>African American/ Black</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>American Indian</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[American Indian]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>American Indian</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asian/ Pacific Islander</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Asian/ Pacific Islander]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>Asian/ Pacific Islander</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Two or more races</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Two or more races]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>Two or more races</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unknown/ declined</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unknown/ declined]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>Unknown/ declined</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>White</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[White]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>White</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total alleged victims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total alleged victims]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>Total alleged victims</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hispanic (any race)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hispanic (any race)]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>Hispanic (any race)</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (Alleged victims by race)]</local-name>
+            <parent-name>[Alleged victims by race]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='% Confirmed Victims' datatype='real' name='[Calculation_1449596173695950848]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF SUM([Alleged victims]) = 0 THEN NULL&#13;&#10;ELSE SUM([Determined victims]) / SUM([Alleged victims])&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[County (Alleged victims by age)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County (Alleged victims by gender)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County (Alleged victims by race)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County (Victims by type of Maltreatment)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County (Victims determined)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[Disability]' role='dimension' type='nominal' />
+      <column caption='Age Group' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Number of Alleged Victims' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year (Alleged victims by age)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year (Alleged victims by disability)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year (Alleged victims by gender)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year (Alleged victims by race)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year (Victims by type of Maltreatment)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year (Victims determined)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Alleged victims by age' datatype='table' name='[__tableau_internal_object_id__].[Alleged victims by age_33C7562E20D74162A2811B3494780D80]' role='measure' type='quantitative' />
+      <column caption='Alleged victims by disability' datatype='table' name='[__tableau_internal_object_id__].[Alleged victims by disability_5FAE3DEE31A247A4B56D8942F3E359A0]' role='measure' type='quantitative' />
+      <column caption='Alleged victims by gender' datatype='table' name='[__tableau_internal_object_id__].[Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3]' role='measure' type='quantitative' />
+      <column caption='Alleged victims by race' datatype='table' name='[__tableau_internal_object_id__].[Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9]' role='measure' type='quantitative' />
+      <column caption='Alleged victims determined' datatype='table' name='[__tableau_internal_object_id__].[Alleged victims determined_13CD4208498C42E78C3D750B573C4537]' role='measure' type='quantitative' />
+      <column caption='Victims by type of Maltreatment' datatype='table' name='[__tableau_internal_object_id__].[Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3]' role='measure' type='quantitative' />
+      <column caption='Victims determined' datatype='table' name='[__tableau_internal_object_id__].[Victims determined_950C827EC14448A9B69DE55E81264CD3]' role='measure' type='quantitative' />
+      <column-instance column='[Disability]' derivation='None' name='[none:Disability:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year (Alleged victims by disability)]' derivation='None' name='[none:Year (Alleged victims by disability):qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Disability,Year (Alleged victims by disability))]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Disability:nk]' />
+          <groupfilter function='level-members' level='[none:Year (Alleged victims by disability):qk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Alleged victims by age' id='Alleged victims by age_33C7562E20D74162A2811B3494780D80'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[12 to 14 years (N)]' />
+                  <value name='[15 to 17 years (N)]' />
+                  <value name='[3 to 5 years (N)]' />
+                  <value name='[6 to 8 years (N)]' />
+                  <value name='[9 to 11 years (N)]' />
+                  <value name='[Under 3 years (N)]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Alleged victims by age].[12 to 14 years (N)]' />
+                    <field name='[Alleged victims by age].[15 to 17 years (N)]' />
+                    <field name='[Alleged victims by age].[3 to 5 years (N)]' />
+                    <field name='[Alleged victims by age].[6 to 8 years (N)]' />
+                    <field name='[Alleged victims by age].[9 to 11 years (N)]' />
+                    <field name='[Alleged victims by age].[Under 3 years (N)]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims by age' table='[&apos;Alleged victims by age$&apos;]' type='table'>
+                  <columns gridOrigin='A1:H399:no:A1:H399:0' header='yes' outcome='6'>
+                    <column datatype='string' name='County' ordinal='0' />
+                    <column datatype='integer' name='Under 3 years (N)' ordinal='1' />
+                    <column datatype='integer' name='3 to 5 years (N)' ordinal='2' />
+                    <column datatype='integer' name='6 to 8 years (N)' ordinal='3' />
+                    <column datatype='integer' name='9 to 11 years (N)' ordinal='4' />
+                    <column datatype='integer' name='12 to 14 years (N)' ordinal='5' />
+                    <column datatype='integer' name='15 to 17 years (N)' ordinal='6' />
+                    <column datatype='integer' name='Year' ordinal='7' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Alleged victims by disability' id='Alleged victims by disability_5FAE3DEE31A247A4B56D8942F3E359A0'>
+            <properties context=''>
+              <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims by disability' table='[&apos;Alleged victims by disability$&apos;]' type='table'>
+                <columns gridOrigin='A1:D29:no:A1:D29:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Disability' ordinal='0' />
+                  <column datatype='integer' name='Alleged victims' ordinal='1' />
+                  <column datatype='real' name='Percent of alleged victims' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Alleged victims by gender' id='Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3'>
+            <properties context=''>
+              <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims by gender' table='[&apos;Alleged victims by gender$&apos;]' type='table'>
+                <columns gridOrigin='A1:I161:no:A1:I161:0' header='yes' outcome='6'>
+                  <column datatype='string' name='County' ordinal='0' />
+                  <column datatype='integer' name='Female (N)' ordinal='1' />
+                  <column datatype='real' name='Female (%)' ordinal='2' />
+                  <column datatype='integer' name='Male (N)' ordinal='3' />
+                  <column datatype='real' name='Male (%)' ordinal='4' />
+                  <column datatype='integer' name='Alleged victims' ordinal='5' />
+                  <column datatype='integer' name='Child population' ordinal='6' />
+                  <column datatype='real' name='Rate per 1,000' ordinal='7' />
+                  <column datatype='integer' name='Year' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Alleged victims by race' id='Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9'>
+            <properties context=''>
+              <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims by race' table='[&apos;Alleged victims by race$&apos;]' type='table'>
+                <columns gridOrigin='A1:J405:no:A1:J405:0' header='yes' outcome='6'>
+                  <column datatype='string' name='County' ordinal='0' />
+                  <column datatype='integer' name='African American/ Black' ordinal='1' />
+                  <column datatype='integer' name='American Indian' ordinal='2' />
+                  <column datatype='integer' name='Asian/ Pacific Islander' ordinal='3' />
+                  <column datatype='integer' name='Two or more races' ordinal='4' />
+                  <column datatype='integer' name='Unknown/ declined' ordinal='5' />
+                  <column datatype='integer' name='White' ordinal='6' />
+                  <column datatype='integer' name='Total alleged victims' ordinal='7' />
+                  <column datatype='integer' name='Hispanic (any race)' ordinal='8' />
+                  <column datatype='integer' name='Year' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Alleged victims determined' id='Alleged victims determined_13CD4208498C42E78C3D750B573C4537'>
+            <properties context=''>
+              <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Alleged victims determined' table='[&apos;Alleged victims determined$&apos;]' type='table'>
+                <columns gridOrigin='A1:H241:no:A1:H241:0' header='yes' outcome='6'>
+                  <column datatype='string' name='County' ordinal='0' />
+                  <column datatype='integer' name='Alleged victims' ordinal='1' />
+                  <column datatype='integer' name='Determined victims' ordinal='2' />
+                  <column datatype='integer' name='Child pop. est. (2016)' ordinal='3' />
+                  <column datatype='integer' name='Child pop. est. (2018)' ordinal='4' />
+                  <column datatype='integer' name='Child pop. est. (2019)' ordinal='5' />
+                  <column datatype='real' name='Determined victims per 1,000' ordinal='6' />
+                  <column datatype='integer' name='Year' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Victims by type of Maltreatment' id='Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3'>
+            <properties context=''>
+              <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Victims by type of Maltreatment' table='[&apos;Victims by type of Maltreatment$&apos;]' type='table'>
+                <columns gridOrigin='A1:K407:no:A1:K407:0' header='yes' outcome='6'>
+                  <column datatype='string' name='County' ordinal='0' />
+                  <column datatype='integer' name='Medical neglect' ordinal='1' />
+                  <column datatype='integer' name='Threatened injury' ordinal='2' />
+                  <column datatype='integer' name='Neglect' ordinal='3' />
+                  <column datatype='integer' name='Sexual abuse' ordinal='4' />
+                  <column datatype='integer' name='Mental injury' ordinal='5' />
+                  <column datatype='integer' name='Physical abuse' ordinal='6' />
+                  <column datatype='integer' name='Total alleged victims*' ordinal='7' />
+                  <column datatype='integer' name='Child pop. Estimated' ordinal='8' />
+                  <column datatype='real' name='Rate per 1,000' ordinal='9' />
+                  <column datatype='integer' name='Year' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Victims determined' id='Victims determined_950C827EC14448A9B69DE55E81264CD3'>
+            <properties context=''>
+              <relation connection='excel-direct.17uq8ng110hng211zgdpr0oui90j' name='Victims determined' table='[&apos;Victims determined$&apos;]' type='table'>
+                <columns gridOrigin='A1:H161:no:A1:H161:0' header='yes' outcome='6'>
+                  <column datatype='string' name='County' ordinal='0' />
+                  <column datatype='integer' name='Total FI alleged victims' ordinal='1' />
+                  <column datatype='integer' name='FI determined victims (N)' ordinal='2' />
+                  <column datatype='real' name='FI determined victims (%)' ordinal='3' />
+                  <column datatype='integer' name='Total Fac Inv. alleged victims' ordinal='4' />
+                  <column datatype='integer' name='Fac. Inv. determined victims (N)' ordinal='5' />
+                  <column datatype='real' name='Fac. Inv. determined victims (%)' ordinal='6' />
+                  <column datatype='integer' name='Year' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Year (Alleged victims by disability)]' />
+              <expression op='[Year (Alleged victims by age)]' />
+            </expression>
+            <first-end-point object-id='Alleged victims by disability_5FAE3DEE31A247A4B56D8942F3E359A0' />
+            <second-end-point object-id='Alleged victims by age_33C7562E20D74162A2811B3494780D80' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Year (Alleged victims by gender)]' />
+              <expression op='[Year (Alleged victims by disability)]' />
+            </expression>
+            <first-end-point object-id='Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3' />
+            <second-end-point object-id='Alleged victims by disability_5FAE3DEE31A247A4B56D8942F3E359A0' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[County (Victims determined)]' />
+              <expression op='[County (Alleged victims by gender)]' />
+            </expression>
+            <first-end-point object-id='Victims determined_950C827EC14448A9B69DE55E81264CD3' />
+            <second-end-point object-id='Alleged victims by gender_7F3194872B0E47FB9A9B24596FF434F3' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[County (Victims by type of Maltreatment)]' />
+              <expression op='[County (Alleged victims by race)]' />
+            </expression>
+            <first-end-point object-id='Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3' />
+            <second-end-point object-id='Alleged victims by race_5D45B5BE9C554959B1E414A9F5A1ECF9' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[County (Alleged victims by age)]' />
+              <expression op='[County (Victims by type of Maltreatment)]' />
+            </expression>
+            <first-end-point object-id='Alleged victims by age_33C7562E20D74162A2811B3494780D80' />
+            <second-end-point object-id='Victims by type of Maltreatment_C4D149BD63674AE5A61E272A689330E3' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[County]' />
+              <expression op='[County (Victims determined)]' />
+            </expression>
+            <first-end-point object-id='Alleged victims determined_13CD4208498C42E78C3D750B573C4537' />
+            <second-end-point object-id='Victims determined_950C827EC14448A9B69DE55E81264CD3' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_EBAF7BF2620C45519342F6E80A4DAC36]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Child mortality' type='sheet' worksheet='Victims by Disability' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Child mortality' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_A956E89EE5EC4608A5EBD6FE476D423E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Child mortality' type='sheet' worksheet='Victims by type of maltreatment' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Child mortality' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_F8C95805C050434B9A252BC4C160624A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Child mortality' type='sheet' worksheet='Victims by Age' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Child mortality' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='% Victims Determined'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>% Victims Determined</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Alleged victims determined+ (Final_cleaned_dashboard_ready)' name='federated.0xs94vc17hcpld1axbhcn1mkkbtr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xs94vc17hcpld1axbhcn1mkkbtr'>
+            <column datatype='integer' name='[Alleged victims]' role='measure' type='quantitative' />
+            <column caption='% Confirmed Victims' datatype='real' name='[Calculation_1449596173695950848]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF SUM([Alleged victims]) = 0 THEN NULL&#13;&#10;ELSE SUM([Determined victims]) / SUM([Alleged victims])&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Determined victims]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1449596173695950848]' derivation='User' name='[usr:Calculation_1449596173695950848:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[usr:Calculation_1449596173695950848:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[usr:Calculation_1449596173695950848:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#59a14f' fontsize='48'>&lt;</run>
+                <run bold='true' fontcolor='#59a14f' fontsize='48'>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[usr:Calculation_1449596173695950848:qk]</run>
+                <run bold='true' fontcolor='#59a14f' fontsize='48'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EA21FCA9-D1A7-406F-A918-8A65CF415A4A}' />
+    </worksheet>
+    <worksheet name='Victims by Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Victims by Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Alleged victims determined+ (Final_cleaned_dashboard_ready)' name='federated.0xs94vc17hcpld1axbhcn1mkkbtr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xs94vc17hcpld1axbhcn1mkkbtr'>
+            <column caption='Age Group' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Number of Alleged Victims' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Pivot Field Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[none:Pivot Field Names:nk]</cols>
+      </table>
+      <simple-id uuid='{2942F001-68F2-411A-82F1-AA8B3F3841A3}' />
+    </worksheet>
+    <worksheet name='Victims by Disability'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Victims by Disability</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Alleged victims determined+ (Final_cleaned_dashboard_ready)' name='federated.0xs94vc17hcpld1axbhcn1mkkbtr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xs94vc17hcpld1axbhcn1mkkbtr'>
+            <column datatype='integer' name='[Alleged victims (Alleged victims by disability)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Disability]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Percent of alleged victims]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year (Alleged victims by disability)]' role='dimension' type='quantitative' />
+            <column-instance column='[Disability]' derivation='None' name='[none:Disability:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year (Alleged victims by disability)]' derivation='None' name='[none:Year (Alleged victims by disability):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Alleged victims (Alleged victims by disability)]' derivation='Sum' name='[sum:Alleged victims (Alleged victims by disability):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Percent of alleged victims]' derivation='Sum' name='[sum:Percent of alleged victims:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[Exclusions (Disability,Year (Alleged victims by disability))]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Disability:nk]' />
+                <groupfilter function='level-members' level='[none:Year (Alleged victims by disability):qk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:Disability:nk]' member='&quot;Total&quot;' />
+                <groupfilter function='member' level='[none:Year (Alleged victims by disability):qk]' member='2022' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[none:Disability:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Disability:nk]' />
+              <groupfilter function='member' level='[none:Disability:nk]' member='&quot;Total&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[none:Disability:nk]' direction='DESC' using='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Alleged victims (Alleged victims by disability):qk]' />
+          <slices>
+            <column>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[Exclusions (Disability,Year (Alleged victims by disability))]</column>
+            <column>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[none:Disability:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Percent of alleged victims:qk]' value='p0.0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Percent of alleged victims:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[none:Disability:nk]</rows>
+        <cols>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Alleged victims (Alleged victims by disability):qk]</cols>
+      </table>
+      <simple-id uuid='{117B7DA9-1F19-47D6-801A-CE66D054CFC4}' />
+    </worksheet>
+    <worksheet name='Victims by type of maltreatment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b'>Victims by type of maltreatment</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Alleged victims determined+ (Final_cleaned_dashboard_ready)' name='federated.0xs94vc17hcpld1axbhcn1mkkbtr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xs94vc17hcpld1axbhcn1mkkbtr'>
+            <column datatype='integer' name='[Medical neglect]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Mental injury]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Neglect]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Physical abuse]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Sexual abuse]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Threatened injury]' role='measure' type='quantitative' />
+            <column-instance column='[Medical neglect]' derivation='Sum' name='[sum:Medical neglect:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mental injury]' derivation='Sum' name='[sum:Mental injury:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neglect]' derivation='Sum' name='[sum:Neglect:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Physical abuse]' derivation='Sum' name='[sum:Physical abuse:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sexual abuse]' derivation='Sum' name='[sum:Sexual abuse:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Threatened injury]' derivation='Sum' name='[sum:Threatened injury:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Medical neglect:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Threatened injury:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Neglect:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Sexual abuse:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Mental injury:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Physical abuse:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Neglect:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Physical abuse:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Sexual abuse:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Threatened injury:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Mental injury:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[sum:Medical neglect:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[:Measure Names]</rows>
+        <cols>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{FA317899-368E-4B5C-A4EF-BE94D988A473}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Child mortality'>
+      <style />
+      <size maxheight='868' maxwidth='1624' minheight='868' minwidth='1624' preset-index='17' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98156' id='3' name='Victims by Disability' w='49507' x='493' y='922'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='77073' id='5' name='Victims by Age' w='24754' x='74753' y='922'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98156' id='6' name='Victims by type of maltreatment' w='24753' x='50000' y='922'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='21083' id='7' name='% Victims Determined' w='24754' x='74753' y='77995'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98156' id='14' param='vert' type-v2='layout-flow' w='99014' x='493' y='922'>
+                <zone fixed-size='280' h='98156' id='3' is-fixed='true' name='Victims by Disability' w='49507' x='493' y='922'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98156' id='6' is-fixed='true' name='Victims by type of maltreatment' w='24753' x='50000' y='922'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='77073' id='5' is-fixed='true' name='Victims by Age' w='24754' x='74753' y='922'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='175' h='21083' id='7' is-fixed='true' name='% Victims Determined' w='24754' x='74753' y='77995'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{14F85112-EFCA-4370-8125-DA6333A80285}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='% Victims Determined'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5B3E932E-9828-444C-A4D0-995E916E8C28}' />
+    </window>
+    <window class='worksheet' name='Victims by Disability'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[none:Disability:nk]</field>
+            <field>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[none:Year (Alleged victims by disability):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CB9B234B-C303-4376-A984-661AE3CAFB83}' />
+    </window>
+    <window class='worksheet' name='Victims by Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[none:Pivot Field Names:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A5B4A0A4-F9F4-4FC6-A019-F98F43F6312E}' />
+    </window>
+    <window class='worksheet' name='Victims by type of maltreatment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xs94vc17hcpld1axbhcn1mkkbtr].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A48EF802-A291-4811-A930-47523F7E7DB1}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Child mortality'>
+      <viewpoints>
+        <viewpoint name='% Victims Determined' />
+        <viewpoint name='Victims by Age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Victims by Disability'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Victims by type of maltreatment'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{24AB4BC4-AB78-45A8-9C92-66E0A426968A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='114' name='% Victims Determined' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Child mortality' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAeeklEQVR4nO3daWwbaZ7f8W9V8b7JIilK1C1Lsls+xvb0TGMbmJ7p3k4mmaCDQTJIFjmQ
+      ALOYVwMk+yYLDBAgiyyQVwHyJsAiM8Big+TNzgTYBSbJdO90OtPt9Om22223ZcuWqIOUeBbv
+      4lVVeaFu2XLbsmRLtmk+nzciqYfFh4X6sYpVD5+/ZFmWhSAMKPlpd0AQniYRAGGgiQAIA00E
+      QBhoIgDCQNsVAKN4687t0jJm/jJGMf3AJ3cX/+cBXqpHb+X9PVuY9TS99Y8xtAwAVjNNd/Xy
+      3ktdeY+7T2N1F3+981pWfZXe+tUD9FEYNLsC0Lv6XzEaOhhVOp/+CsmTQHL7dz2h98Wf011f
+      3n5ydPYAL/XwABi3/wpDK2Is/zXtS78Gux85mNj7OSvv7bq/3acvX8sRRA7EMbfepf3ZWwfo
+      qzAobLvuTL9Mb+Uj8DdQRr+DmfsIkxnM9hf0shsoI+cwVv4fli2N7PqndD//S5RX/4jmL3+K
+      MnwMs9ZDdvdAfQW5dwuj0UIOzeNYeB0AU7tB+8J/xLIlUOwlpOG/D40PsJQXsE8tAKDEz2BL
+      fB/9f/8M6fgJutc/xooq9DJpJP8ozlPfo/3xf8eqZ7Cd+kOgRefin2NuLuL8239K98r/QHn1
+      X22/oVaa7tJtpO7nGNkS3VCI3rW/wvV3/z3tv/kTnK/9WyTpia5v4Rmzaw+gJF/G3PqA3upl
+      bFPndx7vbVzH9cq/xj77Crap38P2wh+gxCbuLCRyAue3/jk4wji/9c+walkkXxy6TbC57rQL
+      z+N8+Y+guoRt4R/Su/HXGOllbBML9+nanS1T8gyBoYPixOq2oNdBskkYuVuAC8f5f4F9chaz
+      sHnfN2mb+g7K1PexT7yILTFML/UBkn9ebPzCPV+CZS+yomO2ZWSn7a6HvXRuvE0v/TmSK4yR
+      /gCzru29ZMWHbfo7GMt/s/OQVd+gd+t/gSOG5EwgSXksxzDSXb0wcp/RufRfkBO/d+dBS8E2
+      8wrm2nsYuU+xnCNIga8Ojdr0Vt+nu76IHB66b1ckdxgz9xmGlsG28A/ovP0n2I7/nX2tIOH5
+      Jt07FMKsbYBpQw4msPQCFm5klxsjewXJN47sDW3fDs5Aq4QcHsPU0sjBOEalgBKIYNZrSB43
+      RvYmcvQ4sssLmJjaGqZeRUmcRJIkupf+M9LEP8KmRrdfu57G1DJIviRKeAQMfXtZvgDm1jWk
+      4DSyN/hlX0YAG8gWVnUDyT+J7A1iamvI4VFMLY3kj2DpOrI/illYBIeK5PXTfuc/4Xrt3zyF
+      1S08a74WgCfFLF7FKJawz33nib5u94u/RE5+FyUYe6KvKzybnloABOFZIC6ECQNNBEAYaCIA
+      wkATARAGmgiAMNBEAISB1lcBME3zmWn/LPVFtH/09n0VgINeshABEO0f1t5230efUT//9SXW
+      stV9t7csC+kAI94O0v4oly3aP1r7V89N8dr5qX0vA/osACubGtdXi0+7G8Iz6uR0/MDP6atD
+      IEE4bCIAwkDb8xDowv95m/MvnWEtC35bnVA8iZsKqaKDWABqWgV3SMVsVcDhx2mT6Ha7OBwO
+      LNMgX6owMZbE6LS4fuki6rF5PO4Axa004+NJVlfTTMZdfJJqcHp+inpFo1zSCKkhNlaWGR6b
+      IKjGodfC7fY8qXUi9LFWq8UvfvELfvKTn3DhwgVWVlY4deoU7777Lj/96U+5fPkyhUKBRqNB
+      tVrdOwCjkxOsr6RodxRsiRkqK7c5PhXl6mef8vuvnUWrQbO9QadrAWVsNhvFzQzBkTHkbhu/
+      zU4d2FxdY2x0mHK9SKPaoaHraKUyerPArRUnkdgkayu3QZaQAU3T8AUiJIai3Lq9jCzZmZ6Z
+      2KurggCAy+ViYWEBm83GzMwMyWSSyclJGo0GiqLgcDjQdZ1IJEK73d47AE63D6fcxeEPUcmt
+      EoyoINk5/cIcRa1GOBxAwka3lAeHD7etzdTxE2wVasTDYTxYKIDHaWcjVyI6HMdu82HoRcp1
+      HYfLg9Nyks9vMBSLg9FCssCSLKReh2ypTq9RIXni7BNafUK/q1arpFIpbt68SaPR4OzZsywu
+      LnLu3DkKhQKKouD3+0kkEkSj0Wf99wAm62sZxsZHAfjjP3tLnAUSHugfv3aSP3jt5H3/1+v1
+      sNm+/nn/jH8Jlnc2fkE4Cs94AAThaPXVhbDXzk1x5tjwvtubpoks7z/jB2l/lMsW7R+t/cmp
+      g18Ie8a/A+xmGAaKouy7/YOO+w6j/VEuW7R/cu3FIZAw0EQAhIHWV98Bfvbzt/d9GvTkVJx/
+      9y+f7JxDQv854gB0+ODdi4zNHsNrt9C7Jj3DYjgWIp0r4+yW2OoGSIbdBH0ucuUm0bCffDbH
+      yFiS1ZVVxiZHSd3eZHZu8mi7KgykJ3IIJEkSuYJGIZej3dG5vbxKxN5GaxoMjYxRKmssr65j
+      b5e4dnsdNeTg9vImdb3JzVsrT6KLwoA64gBIOF0OLMsiGAwSCkfweTwEfW5Wc1WGhxPkM6t4
+      3G58bie5ao94JIDH40UyDWwOF26XA7fb9fCXeoByuUyr1SKVSnHhwgUAdF3nvffeo9PpcP36
+      dbrdLo1G47DetNBHjvgQyM7ZF8/f9z+JLy/whiJ3Hrv7mu/sXOBQenDhwgUWFhb48MMPOXfu
+      HLB9SmxmZoa/+Iu/YHx8nHQ6zeTkJJOTk4fymkL/eO7PAi0sbNce+NGPfsTy8jLdbhev18vN
+      mzdZWFhA0zQKhQJbW1tPuafC03Bke4Ds1hY+nx+vzwtAsVhEVdVdbbayWySG9i6B9Dgsy2Jp
+      aQmn00mxWMTtdlOpVNB1HcMwmJiYYGRkBJvNRjabPbJ+CM+uQw+A2SpzaXEDh91OtVKjmN0g
+      OTPP0uJ15ieiyIkz1DZvUspm8IZjVEpZPL4YX3x+kckTpylnNvGpKoZeIT4U48OPLjMyNc+L
+      Z44fuC+SJPH666/f939jY2O77ieTSXq93iO9Z6F/HfohkGUamJaELG//Yn9kdIStXIlYJIjd
+      6Wbt1iKtrsXw2CQBjwPThLpWJD4xR69dJZGcwOe2b//i37IYSk4wMXp0ewlhsB36HkDxqLx4
+      dvehzvhdt+O7P3gfbGISgETyULolCPfVV1eCf/yDc+gdY19tvS77EfdGeB70VQCmhkMHHg0q
+      CHt57k+DCsJe+moP8PanKxSqLQDiIe+Bp8EThHv1VQB+++nKzmjQk1NxEQDhsYlDIGGgiQAI
+      A+2RD4E211OU600i8SQ2etDtEUgMceCTj90qW5qJL+Cl3ajgdrlxeb37Tubq6iq3b9/m1Vdf
+      5aOPPmJzc5Pp6Wk0TSMYDHL69OkDTbstDJZHDkBNb3PixAtc//wzMrkiE8MjZCt57IbCtaUl
+      pubnaGSLfOOll0gvX8fhV6nkN+jJblxKj0rTYDIRoVIr4nAEyVYbFNcWiY2ME3HLVOoN3JJJ
+      tutBDbiYnRr/Wh8Mw2B1dXVndgBN09B1ncXFRdrtNpZlYZomZ8+KmeWE+3vkQyDFMrh+/Qtc
+      oTiRoBdkO8fm57C6LZITM4wmYiQnpvE4le1PYEniq/knPP4ww0NRDMNAliQkwOUN4vM4v/Y6
+      EzNz2OX7T1zR7XYxTZNr166Ry+WYnp7GbrfzxhtvMDMzg6qq1Gq1R32LwgDoq2lR7p4a8eRU
+      nD/9w1f3bC+mRRHtH9ZefAkWBpoIgDDQ+upC2NRwGEVWvrwdesq9EZ4HfRWAH//g7IEGwwnC
+      w4hDIGGgiQAIA62vDoG+KpQ9NRzix3/v3NPujvAceKw9wHrqNtcXlzD2uJJQKB68pFGz2bzr
+      nkGxWAa2C2VfXcmxslk+8DIF4X4eaw/Q7JocPzbK0o1FepaE36Ng8w1j6HkaVR1XIERLr6Pl
+      N+nJbpxyj1qji6r6Kefz4PIS9gep1GoEI0HyGxn84RBrqRXOfOMs+VyWUFSlWmqiquKsj3D4
+      Hvs7QKNWpadXyZWbSI4g+dsXUWwOUpkCpmkCYKAgmV0km5Ow206tB5MJP+rYDJX0CrlyE8s0
+      CKvD2BSZ4eQIUqtGo9UmsyXm6xGOzmPtAdSAl3JL4oWzLxJcSxEMBfF7zhAMBlEsA7s3jNMW
+      pqPXMRQ32Y1lwvFRpgJe7JKJ3WYjfOabBHMZgiEVmyQBFh29hik7iUQU4tHQfbtpWRbvvvsu
+      xWKRH/7wh7z11ls4HI7tWsXFIrFYjBdffPFx3p4wAB4rANGhkZ3byfEvf53ldgAQH74z/4nH
+      s13lXQ2d2fV8BUBx3nnul1yu7clwQ8EHzw8qSRKqqqJpGgDT09NcvHiRkZERms0my8vLtFot
+      vve97z3SexMGwxM7C2S0W3QtExQXLrt89z9omXZcdpl6o4EsSZiWhc/r3XN5pmmSzWbxer3k
+      cjl0XcflcnH+/HmCwSD1eh2n8+ujSwXhbk8kAJVSntSNG8TnjuNUeixvbTIxmmR9fZ3RmI9L
+      q1Xmp8aQrS5aoUQkGuHKxY+YnpvD4VGh1yQSiexapizLvPrqndGg8Xickye3iySfOnUKENOi
+      CA/3RC6EFco1ZiZH6dSLVHUTWbIoalUkuU16vcDY5CyVYo5iqQRAsVQkNjRKIjGCtrVEpd55
+      Et0UBtAT2QOE/R42ckUSySF6lky7Am6XnVbLRWgoRC57m+HkOFavhWQBEmC0yRYrdNoWM8fE
+      3KDC0XgiAYjEEkRidzbiaHj7y20sFgMgPvLV/+497jdRrFEcX+6nviqUHQ/t/f1AEPbrGR8K
+      IRON3jn2f/XclBgNKhwqMRhOGGgiAMJA66sA/Oznbz/tLgjPmb4KgCAcNhEAYaA9NACbG6to
+      tebDmtFqtXZuN+oPLzq9nzYPYhgG+XweEEWvhcez52lQUy+yWTE5HoGVWzfA4SfgAq1hEA04
+      yWoNEhEf+YpOu1ZAcYc4PjtNq92iXi1R0GooMowMJ9jI5kkMJylvpfGpQygY1Mp5kBUKlQYK
+      EiE1Sq9ZRnEH6dRK9BQ3+fQyU/OnSMTunA69desWa2trvP766w8sen3s2LEjX3lC/9tzDyC5
+      IkxEHdxa3UCyuzA7TVIrKRqNOqnUCp1Gg0ypyrGpcXzBCC7H9jn6YrFEq2Nic9iZjnvI5qsM
+      Tc1TyixTbxukNzIUiyUq9TYRp4E6No1NcdJpllhNbVJvNJBsTuySSTQ+vGvjB5ifn8du356G
+      VxS9Fh7HnnsAq9sip9WIqTE2V5eIjkwyOuag2oZwLEip2iau+riVWicauvOLLVWNoCgKXsNA
+      cSv4HBorN68zOzFFZiNN0B/C57ajKAqKA3w2BYcaQlHAHDVxeDw7Re7MboutfGlXCK5cuUK5
+      XGZzc5NeryeKXguPbN9zg7ZarZ1x+gdltFuYdhf2x/zK/cd/9hb/4Sf3L3x9P2JuUNH+Ye33
+      vYRH3fgBFKcLMYBBeBaJ06DCQOurAPz4B2IuIOFw9VUAxIS4wmHrqwAIwmHrqwBcXck97S4I
+      z5n+CsCyCIBwuPoqAIJw2EQAhIG2ZwBu3bjGtSuXqLa25/jsVrco6vdv22jUH7icjfX1ndtb
+      W9mHjgTdesh8oL/+9a93xvusrKzw9ttv88UXX/C73/2Oq1ev0keFL4WnbM8rwa1Wi5beIZde
+      5p1rV5mbnqBsVCkFXBTWFpH9w0T8XsAEy6TbbtLoQMBtwxWIkk1do+eKEQu4AJMrly7RkRwE
+      PFVatSKOcBJ0jXqzhy/gxOUJUytu0jLtpFeukyp2ODk1jCccZ2xkaKdfCwsLO8Ovp6amWF1d
+      pVarsba2xsbGBt1uVxTHFvbloYdAHrdCTe8xM3ucWMi7XbiaOqYtjF0Gq13C4Y/ueo7T42di
+      NIyBF4fy1aexhdEzkaTtl0yMjJDPbvFV9Wy7y8vk2AiGYSBJEm5vkNMLx3F5A7s2fsuy+Pjj
+      j7ly5Qq5XI6bN29y+fJlTpw4IYpjCwfWV4Wy/9ubn/FP/taZhzf8khgMJ9o/rL34EiwMNBEA
+      YaD1VQDiYTElonC4+ioAr56bengjQTiAvgqAIBw2EQBhoPVVAN7+dOVpd0F4zvRVAHKamPBK
+      OFx9FQBBOGwiAMJA29e15KWlG8zOzlPMbWLzhunWS0hOP16nTLOp09Jb+MJROs0aDptEvQOx
+      kIe1jRyTM5PQaXH90kXUY/N43AGKW2nGx5OsrqaZjLv4JNXg9PwU9YpGuaQRUkNsrCwzPDZB
+      UI1Dr4Xb7dnpz69+9SvOnz/P5OQkKysrXLp0iWQySTabJRaL8dJLLyFJ0lGtM+E5coASSV20
+      SpugXKdjWDRyW2y16hw7Nka27KC1lcHoGRhmD4fTwXK5gNeS0IHMyipjo8OU60WaTQmPW2Zl
+      LUcyGWTl5gaR2CSry7eRFAkZ0DQNXyBCYijKrZuLyK4I0xN3AnD+/Pmd21+NBk0kErTbbVZW
+      Vuh0OrzyyiuHt5aE59a+AmCXYT1TQpHadHpeOs36ToV3p9PBcNwGhgOjZ6DYtqfAatbK3L6R
+      4vzxeaKRIJs7VSLtFLM6EVVlYz1HKBonp6XvXyWyVKfb6TEze6fAnmVZLC0t4XQ68Xg8lMtl
+      yuUy4XAYAFVVcbvdh76ihOfTkY0GrVdKaI3urqHMB2dSKJR3CuWJ0aCi/WG3P7Iqkb5gBF/w
+      cZeyu0qkIBw2cRZIGGh9FQAxGE44bH0VADEcWjhsfRUAQThsfRWARqv7tLsgPGf6KgArm9rT
+      7oLwnOmrAAjCYRMBEAbavi+E3bj+OYorRDTsJxT6eqGKZqOBy+vdlahCsUhUVQHo1Mq0FQd2
+      uwvX3dXyOjXKPQ8hj0K90aCtt3C6XciShMfj4V69Xo/f/va3nD17lng8zuLiIs1mE4fDgc/n
+      Q5ZlxsfH978GhIG2/yvBNhe9ToPMRpHlNTvxSJCAUyHX6GD0LDwuG75mlS2tyVDEx9pWCbfT
+      RlRV2UqvkV1bQ52cwDIdlKtlpseSrK+niPq9XM82GR+KItOl1dBxeV2sL99iem4OAw8YTZLJ
+      JACff/45L7/8MpcvXyYej/Pee+9x4sQJdF3n5s2btNtt/H7/ztggQdjLvg+BitkMamwYjz9M
+      JOgj4rVzbb1EPOChUS5T0XW0cpXJiTFyuRzZtXU6Xz631mwzOhzH6DQxbG5svQa3Umla7Rpb
+      WY3R8Un0Ro2mvj3zrq7rqLFhhoZGaBRuY9l9O/1wu93k83l6vR7AzijQiYkJgsEgw8PDLC0t
+      Hd4aEp5r+94DfOPci3g8HvweJwBdvUY0HMDpdqMmhohFgrhdDlbXNxkZGcEXihMK+QGYGB1m
+      K68xFFdBUsg0VWaTQ2RyXqLBEJu5LaZnpul1WjuvJ1s98qUyja6N2fidQUXHjx/n8uXLvPzy
+      y+RyOb71rW9Rr9cZGhoiFAqRTqeZmZk5rPUjPOf6am7Qz25tcubY8L7bi9Ggov3D2ouzQMJA
+      EwEQBlpfBeDkVPxpd0F4zvRVAAThsIkACAOtrwKwsll+2l0QnjN9FYBGq/PwRoJwAH0VAEE4
+      bCIAwkD72qWx5aVFLLsPr9tGYihxv+cABo16F6/PdddjXTbWi4yObT9naytLIrGfOYG6ZLeq
+      DCXUfXU4nU7zySefMDIywosvvsgvf/lLpqamyOfzuFwu3G433/72t/e1LEG4JwAmPUthbnKU
+      a1c+JbW+Sdhpcu1mimMLp7AqWxhelUjQS7dmUGlWmZ4a5eMPP2DyxGnkrkWrnGdxo4DdBpc+
+      fB//yBReqY1pd6O0K9zerHFybhy9WsM/MkKnUYN2j/c/vMDU/BytYhmfqmK1a0RiUZodG5Kh
+      74zvyWQyfP/73+eTTz4BtqdGXFpaYnx8nNXVVQzDwOPxcOrUqSe9LoU+JN97t92scju1gS8Y
+      IRGLYHO4WTh1GrfLycz4EMOTs0jG9m9zJUmiUsgTn5ij164CYBoGliQhSxbqUJLpiVEsy8Sm
+      2HB5/Jw6eQKX28ex8QTtroEkS1imSXJihtFEjERyAp/bjiRJyHYf3fI6gdjoTg/n5+d58803
+      icVi5HI5dF0nHA7zzW9+k7NnzxIOhwkGH3tGLmFAPJHBcPs/HLqXydLSMrOzxwAxGE60P/z2
+      T+RL8KNt/ADyzsYvCEdBnAUSBlpfBSAeEjPDCYervwIgpkYUDllfBUAQDpsIgDDQRACEgSYC
+      IAw0EQBhoD0wAM1mc9ff+6k3Gvd9vFG//+MHbfMgly9fptvdHo5x48YNlpeXSafTVCoVymXx
+      oxlh/x54LXkjvcHc7Bzp9TRejx1DceOgTbOnEHQr6IaCyy6zlV5FcYfw2kxy5SYnT8zRareo
+      V0sUtBqKDCPDCTayeRLDScpbaXzqEAoGtXIeZIVCpYGCREiN0muWUdxBOrUSPcVNPr3M1Pwp
+      ErHtYnmLi4sEg0EuXLjAd7/7XYaGhnjnnXeIxWLU63UajQZvvPHGgS6TC4PrgXsAs9vixo0b
+      1PQ2qdUU9XqDer1BOp0mV6owkohRLBWxOb1IZpd6s4Pjy22uWCzR6pjYHHam4x6y+SpDU/OU
+      MsvU2wbpjQzFYolKvU3EaaCOTWNTnHSaJVZTm9QbDSSbE7tkEo0P72z8sD1tYiwW29nANU3D
+      siwCgQDNZpNIJMLFixePdq0Jz40HfkzGhpKoqkqxUKRRc4HDAx0TVVVJxFUkQI2oKMp2YexK
+      KU8qk2Nudg5VjaAoCl7DQHEr+BwaKzevMzsxRWYjTdAfwue2oygKigN8NgWHGkJRwBw1cXg8
+      eF12YDuIW/nSTghOnTq1Mzt0LpcjnU4Tj8eZn59HVVWWl5eZn58/+jUnPBcObTSoVsjStuy7
+      Pq2/YrRbmHYX9sf8ym0Yxk7g9kOMBhXtH9b+0A6Uw9EHj/hUnC72v9kKwpMjToMKA00EQBho
+      IgDCQBMBEAaaCIAw0EQAhIEmAiAMNBEAYaDtKwDFYnHn716jOL9qd5ijQe8djdrr9fjNb35D
+      LpcD4JNPPuH999/n6tWrpFIp1tbW9rVcQYB9XgmW21XyNSflShOXXWctdYvoyCStZhWQcCqQ
+      r+g4ZAtVVSlpGoVchnypgtchE4klyJZrqOEI7WoJmzeEZHbZWL1FwOdhs9aFTo9wVMXQK0iu
+      AN1aCcPmplrI7BoNem+h7DNnzvDmm29imqYolC0c2L72AOGRcRY/fJ/hsVF0XcftcaNpGs1m
+      g5Kmkc/lWF+/88mr6zrIDvzBIDPJCNV6h+HxCRqlNFmtwfpGBl3XcXmCqD47w5PH8PsCyGaT
+      VCqDZZq4fUF8LgeR6BBD0Tsb872Fst955x1ee+01UShbeCT7HgynaRrhcJhms0lVK+AJxdEr
+      eRR3ELnXpIOdgNeNx+Oh2WwiyzKmaeKyy2jZTVbrFqfnpthcXyUUjaNIIMsyDgW6sgOj3UGW
+      oVHVsOxefG4HALLVRWv0GIqGdwbDXb58mYWFBTRNY3l5GYDz58/Tbrd3CmXbbDYxGE60f2j7
+      viqULUaDivaH3V6cBRIGmgiAMNBEAISBJgIgDDQRAGGgiQAIA00EQBhoIgDCQBMBEAba1y6N
+      bayvMzo2tn3HaFKsgRryALC+sY7dklDHRrHf9ZxaoYgzquK4Z1nrGxuMjW6XONWLW7RcAdwO
+      F667JwjSi2x1AyQCduqNBuWSRigSpq23UKNfL559b6HsDz/8kOXlZcLhsCiULRzY1wKg6zrL
+      S9fpNKrIgQjr6SYxT5OlVJHjp+fwWhLZ9dt8eulzJsZnkRwyZrmMU5/A1myAZOFzwruf3uL0
+      yVkAUrdvUsnlCI3EKBhu1jIZvn36OL/7v29z4vgLbFS3KAe9SFYX2YRmq0lhM8303Bz1lrRn
+      oexQKMTc3BztdlsUyhYO7L6HQIrDzfFj4zh8Edw2sLu9nDq9sDO5lYnMzOxxYmEvkiQRH4qB
+      Cc26RragUarUGY4E6X7Z3jC2C2ID2L0hAnKLmysZJuZmaFd1JKyvjfGJRWNIdu9DC2VfunSJ
+      brcrCmULj+QZHwy3u1C2GAwn2h92+2f8S7AolC0crWc8AIJwtEQAhIEmAiAMNBEAYaCJAAgD
+      TQRAGGgiAMJAEwEQBtoDA5BZT1HXOwda2F5Ftffb7kHFt+92d6HsTCZDJpMRhbKFR3Lfa8mZ
+      1C0ckSQOo06h5kPq1GhUSzjsfhpWl4Bdpta2cCsGWr2DVCtBYgylVUeNqEiSRDgSYXM9haG4
+      8ThtSECvo1NrW5gdnYgaIeS2Ue4o5Lc2CIbcXL+W4+Q3ZujodfL5IiMTU6RXUwTVOMPx7ZGh
+      9xbK/uKLL4DtGeNEoWzhoO67B9A7PQI+Fw7aFOsdisUSzY6JvdcgGEuQSqVoNBq0DQi7HHgC
+      EcbGRgColstolQoS7BTY1jSNUlmj0WiQyaQBKJWKGHqZdKEKkkm52mRsdIxyqUi10WJ+Zojr
+      ny0xOn+CWqV4p2/3FMp2uVy4XC6CwaAolC0c2P8H3ZF/2mHwSX0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Victims by Age' width='192'>
+      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
+      02nTlnN8xBnXMwCqHkfp1KjVG17XI4Sneq8BFA0jHKRalQtjibPtwE0ggAE5/VuIvvUMwNVr
+      V795JAkQZ1vPs91mZudYyhcZmZj2uBwhvNVzDfD59WtUq1WWV9b+ZHplewOzC1ubayw8WqbR
+      aODYbXbrpifFCnHUeq4B/vbnf99z5mphCT08xtbGBqmRKYrFDdpmm5cuvYzruriui+P0PoHO
+      ZTAaqp81hm973aDoZ3xwNpfhoU74z6TT1IDLr36Hxfl5NEOna9n7/+nT//5lVYf5n07QN0Hu
+      53WDou+wDsoQD7EMDxEAi42dDm5rDVV3CCdSZFMJopEQ1XqDVDKO67oDf1UIRVUPHMO3vW5Q
+      9DM+OJvL8BAB0Jh79bWez6SS0hQvBtPgfGwJcQwkAMLXJADC1yQAwtckAMLXJADC1yQAwtck
+      AMLXJADC1yQAwtckAMLXJADC1yQAwtckAMLXJADC1yQAwtcOFQDbsnBcsK0unU4X27bBdff+
+      FWIAHaoneP6rTxl6+QOqy/cxLUgNxdGxMDITpGJyJWkxeA4VgMmJCWpAMBwlApidJlu1Dm9N
+      hbFtG8dxDmxGHpSrJjiOg2VZfbxucNaC/YwPzuYyPFRT/OpGBauxxpDmUmtDNp1lalSjWN5l
+      JJ0ADm64HpSGalVV0bTD3x1TVQdnDdjP+OBsLsNDNcW//MbbPZ8xnv9NhDhV5CiQ8DUJgPA1
+      CYDwNQmA8DUJgPA1CYDwNQmA8DUJgPA1CYDwNQmA8DUJgPA1CYDwNQmA8DUJgPA1CYDwNQmA
+      8DUJgPC1vnrjFu7fAT1GLKIT1aATTJJNRo66NiGOXV8B0PUgO7Uaiq2yVuvy/TfGpClemuJP
+      jWNqin9CVQN0Ox20VIaXogqbO7uMSlP8MVRzPKQp/om+fhOT07NMTvfzSiFOF9kJFr4mARC+
+      JgEQviYBEL4mARC+JgEQviYBEL4mARC+JgEQviYBEL4mARC+JgEQviYBEL4mARC+1lcAmrtl
+      CttlTNPEdS3qjdZR1yWEJ/rqB1hZL6ICjYaO2zIZn7l8xGUJ4Y2+1gCapqFrGlanRaXRIagN
+      RqeQEH+urzVAMhqi1oGRoQwXpkPsVGpkU4mjrk2IY9dXAHJjE+Se+jmbMvab4g8yPZrAdQ9+
+      /rTIJffGcliGHuDV6ewxVHT0+hkfnM1lqLhH2Opv2/aBTfFnwVkfH5z9Mf75+I70MOiL/OJc
+      133mZTeedcmVZ7wpzWZz/73Nbx7360XHtzeGg5/vp7bm/phcHKuN2e7vkid/1NcYXRf3mcvn
+      ydj6GaPrOjSb5v7vaG/Mhy8T/nJ8gY8++uij/t7qaK2vLnFn/hGT50b5/No1QrEhysUN9Egc
+      TWlx9XdfEY7F0FUHW9Fot0xKxQ3UUJTtzVUcNYTTaVJvtljPb5BMpdjZWMHWDa7+5jqG1UHN
+      xMivlUgPxb0f38pjNorbDKUz3Lv9FW1bxW7VMS0FI6xz88Z18sUdxsdyNJstut0uZq1CreXQ
+      NauU622CKuzWauxsFQiEomiOycrmLgu3v2BoLMPKo12q1SKZTMbTsZUKeZbW1qnUWhiaxRc3
+      7pDNpVjf2CKZiFOvlvjD3XlGMkk+u/Y501NTNJtNNE3DNE0K63nC8QT55UcEIwnM2g5mu8t6
+      YYuhoST5x4tEdJtPb61hmxWShspmtUsyFn7h2vu7QMwxiMWiKJRxUUlksoTbJcxYjuXFRS7O
+      TZMdTrG1tUUueY7Fx4u43Sbr5S6ZWouAZbJWLBPEYWZylHrLpG257NTbXBzXmRpJs7JZ4tVL
+      czid9RMZ3/ZOmbCuslVqEDRiTI5nuX9/EaiQTl5CQQFFAVTW1/MoqsrWxhoBI0kuabC8UWI0
+      FWNi9gKrS0vosTTt2iZDYxcJYrKx/BgYRsH7i1eFQiFQGjTrNSIzI2SzOVaWVhhPh1ktt5hK
+      Z0klSmihCOMje/tJmt1g8eEarXqLhgqNziLtZotSfQG322R8JEvL7OC40LAcJjSFXNJgq1rl
+      4txFmsUFGBl64dpPzTfBlUoVIxzCAUKqSxOdcn4JI5HEtro4jkMkEkHRIjSqZc5fuEgyEmQ4
+      l8KyFKKRCGPj5whFYoQVm1bbwtAUTAsSuVGiRoCAa+EqJ5P58ZEcNhqRqE4mZrC8vo3itFG0
+      EOCih0KEdB0AQ7UwEjnS6TS5XA6raxGNRhnKDBMNB4lGo7TbbeKZFLVSmXA4SjIaQ4/ouHh/
+      SDociaK6DuMTE4CG2SgTjRosF3bJxHQq2wW2t0tsbW2xvV1ic2sHPZ6jXKly6eIkIVUjkzBw
+      AzoRw+DcuXPEYnGctknXhQBgqzoj4xME3Q52p0YgGDuS2o90J9gTTpeV9W2mJsa+fV7XolRu
+      kEknAahXd9CiKcKn/HuL1dVVJiYnn+tPuVQq7W/yuFabcr1zIpt4h2W1mxQrzf01wrM43SZV
+      UyGVMAAol0ok0hkCR7AYBy8AQhyhU7MJJMRJkAAIX/t/KtAAKlFJ6soAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Victims by Disability' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Victims by type of maltreatment' width='192'>
+      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
+      +mJk6s0AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
